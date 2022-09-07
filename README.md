@@ -2,6 +2,7 @@
 <ul>
   <li><a href="#io-intro">Introduction</a></li>
   <li><a href="#io-blocks">Layout</a></li>
+  <li><a href="#io-pages">Pages</a></li>
 </ul>
 
 <ul>
@@ -28,5 +29,14 @@
     <p>
       <strong>Footer</strong> - is located at the bottom of the page, occupies 100% of the width. Contains a copyright string.
     </p> 
+  </li>
+  <li id="io-page">
+    <h3>Pages</h3>
+    <p id="io-auth-page">
+      <strong>Authorization</strong> - the first page that an unauthorized user encounters. On this page you can log in. After successful authorization, the user will be redirected to the profile page.
+    </p>
+    <p id="io-profile-page">
+      <strong>Profile</strong> - the main page, it contains a user profile with an avatar and information about him, his status, a list of friends, a list of friends who are online and a wall with posts
+    </p>
   </li>
 </ul>
