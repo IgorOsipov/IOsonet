@@ -30,7 +30,7 @@
       <strong>Footer</strong> - is located at the bottom of the page, occupies 100% of the width. Contains a copyright string.
     </p> 
   </li>
-  <li id="io-page">
+  <li id="io-pages">
     <h3>Pages</h3>
     <p id="io-auth-page">
       <strong>Authorization</strong> - the first page that an unauthorized user encounters. On this page you can log in. After successful authorization, the user will be redirected to the profile page.
