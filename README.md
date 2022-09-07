@@ -38,5 +38,14 @@
     <p id="io-profile-page">
       <strong>Profile</strong> - the main page, it contains a user profile with an avatar and information about him, his status, a list of friends, a list of friends who are online and a wall with posts
     </p>
+    <p id="io-users-page">
+      <strong>Users</strong>
+    </p>
+    <p id="io-communitioes-page">
+      <strong>Communities</strong>
+    </p>
+    <p id="io-music-page">
+      <strong>Music</strong>
+    </p>
   </li>
 </ul>
