@@ -1,4 +1,4 @@
-<h2>Menu</h2>
+<h2>Navigation</h2>
 <ul>
   <li><a href="#io-intro">Introduction</a></li>
   <li><a href="#io-blocks">Layout</a></li>
