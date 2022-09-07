@@ -1,4 +1,5 @@
-<h2>Navigation</h2>
+<h2>IGOR OSIPOV'S SOCIAL NETWORK</h2>
+<h3>Navigation</h3>
 <ul>
   <li><a href="#io-intro">Introduction</a></li>
   <li><a href="#io-blocks">Layout</a></li>
