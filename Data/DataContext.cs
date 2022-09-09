@@ -14,6 +14,7 @@ namespace IOsonet.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Profile>().HasMany(p => p.Posts);
+            modelBuilder.Entity<Profile>().HasMany(f => f.FriendsProfiles);
         }
     }
 }
