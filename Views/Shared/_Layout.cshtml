@@ -28,6 +28,15 @@
                     </ul>
                 </div>
             </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div>Hello, @User.Identity.Name</div>
+                <a  asp-area="Identity" asp-page="/Account/Logout">Logout</a>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login">Login</a>
+            }
         </nav>
     </header>
     <div class="container">

@@ -1,9 +1,11 @@
 ﻿using IOsonet.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace IOsonet.Data
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext
     {
         public DataContext(DbContextOptions options) : base(options)
         {
@@ -13,8 +15,14 @@ namespace IOsonet.Data
         public DbSet<Posts> Posts { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+            //modelBuilder.Ignore<IdentityUserLogin<string>>();
+            //modelBuilder.Ignore<IdentityUserRole<string>>();
+            //modelBuilder.Ignore<IdentityUserClaim<string>>();
+            //modelBuilder.Ignore<IdentityUserToken<string>>();
+            //modelBuilder.Ignore<IdentityUser<string>>();
+            //modelBuilder.Ignore<ApplicationUser>();
             modelBuilder.Entity<Profile>().HasMany(p => p.Posts);
-            modelBuilder.Entity<Profile>().HasMany(f => f.FriendsProfiles);
         }
     }
 }

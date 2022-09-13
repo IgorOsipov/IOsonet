@@ -12,7 +12,6 @@ namespace IOsonet.Models
         public string LastName { get; set; }
         public string AvaPath { get; set; }
         public List<Posts> Posts { get; set; }
-        public List<Profile> FriendsProfiles { get; set; }
         
     }
 }
