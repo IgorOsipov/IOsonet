@@ -19,7 +19,7 @@ namespace IOsonet.Controllers
 
         public IActionResult Index()
         {
-            var profile = _dataContext.Profiles.Where(x => x.Id == 1).Include(x => x.Posts).FirstOrDefault();
+            var profile = _dataContext.Profiles.FirstOrDefault();
             return View(profile);
         }
 

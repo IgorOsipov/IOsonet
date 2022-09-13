@@ -1,11 +1,10 @@
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
 namespace IOsonet.Models
 {
-    public class Profile
+    public class Profile : IdentityUser
     {
-        [Required]
-        public int Id { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]
