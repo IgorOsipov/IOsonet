@@ -19,7 +19,8 @@ namespace IOsonet.Controllers
 
         public IActionResult Index()
         {
-            var profile = _dataContext.Profiles.FirstOrDefault();
+            var profile = _dataContext.Profiles.Include(x => x.Friends).ThenInclude(x => x.FriendProfile).FirstOrDefault(x => x.Id == "0c71fad0-f9ae-4c10-82f3-558cda7519cf");
+            var friends = profile.Friends.Select(x => x.FriendProfile).ToList();
             return View(profile);
         }
 
